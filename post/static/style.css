@@ -1,0 +1,104 @@
+body, .header-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set width of document to occupy 80% of the screen */
+  .body-container {
+    width: 80%;
+    margin: 0 auto; /* Center align the document */
+  }
+  
+
+/* Reset default margin and padding for header */
+.header-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: beige; /* Set the background color to beige */
+  }
+  
+  /* Display logo and icons as inline elements */
+  .logo, .icons {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+  
+  /* Add margin and padding to logo if needed */
+  .logo {
+    margin-right: 10px; /* Example margin */
+    padding: 5px; /* Example padding */
+    
+  }
+  
+  /* Style Font Awesome icons */
+  .icons li {
+    list-style-type: none;
+    margin-right: 30px; /* Example margin */
+  }
+  
+  /* Add custom styles to Font Awesome icons */
+  .icons li i {
+    font-size: 40px; /* Example font size */
+    color: #3207b5; /* Example color */
+  }
+
+  #home {
+    margin-right: 100px;
+  }
+
+  /* Set image width to 100% and height to auto */
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    border: 2px solid #060212;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  /*styling the images rendered from models.py to size*/
+
+  .image-container img {
+    max-width: 450px;
+    
+       
+  }
+
+  .image-container img:nth-child(2n) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .header-container {
+      /* Modify the styles for the header on smaller screens here */
+      /* For example: */
+      display: flex; /* Change the display to flex for better mobile layout */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items vertically on smaller screens */
+    }
+  
+    .icons {
+      /* Modify the styles for the navigation items on smaller screens here */
+      /* For example: */
+      margin-top: 10px;
+      display: flex; /* Change the display to flex for better mobile layout */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;  /* Add some spacing between navigation items on smaller screens */
+    }
+  }
+  
